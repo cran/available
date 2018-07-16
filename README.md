@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/available.svg?branch=master)](https://travis-ci.org/ropenscilabs/available)
+[![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/available.svg?branch=master)](https://travis-ci.org/ropenscilabs/available) [![CRAN status](http://www.r-pkg.org/badges/version/available)](https://cran.r-project.org/package=available)
 <p align="center">
 <img src="http://i.imgur.com/1KZn3Z5.jpg" alt="xzibit">
 </p>
@@ -19,7 +19,13 @@ available
 Installation
 ------------
 
-You can install available from GitHub with:
+You can install available from CRAN with:
+
+``` r
+install.packages("available")
+```
+
+Or the development version from GitHub with:
 
 ``` r
 # install.packages("devtools")
@@ -39,18 +45,13 @@ Generate new package names from titles
 
 ``` r
 library(available)
-suggest(title = "Client for New York Times APIs")
-#> [1] "times"
+suggest(text = "Client for New York Times APIs")
+#> [1] "timesr"
 
-suggest(title = "An R Interface to SciDB")
-#> [1] "scidb"
+suggest(text = "An R Interface to SciDB")
+#> [1] "scidbr"
 ```
 
 ### Rstudio Support
 
-In order to have color in the RStudio terminal you need a [daily build of RStudio](https://dailies.rstudio.com/) and development versions of the **rstudioapi** and **crayon** packages.
-
-``` r
-devtools::install_github("rstudio/rstudioapi")
-devtools::install_github("gaborcsardi/crayon")
-```
+RStudio versions 1.1 and later support color in the terminal.
