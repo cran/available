@@ -1,10 +1,10 @@
-25b5dc89f3b896ba1a01ccb917ed2957 *DESCRIPTION
+23594ad540fbcde2c2024ca0c64e540e *DESCRIPTION
 b0a57549ab664695d312d8f263bb5ae0 *LICENSE
 c03c8c9a1ffc7a208b1d2064b4a97423 *NAMESPACE
-d2468179640885b02167c36474c8ddc7 *NEWS.md
-2bbda4d47f233b41df3e20a0096a16f3 *R/available.R
+e58f4d2c2d0dc5bf6e7bc9fbe5d674b8 *NEWS.md
+5b13172d9ad8e9e77ba64aeda8f7f0bf *R/available.R
 51e3d3ef54f515dd106c7c277e55badc *R/bad_words.R
-57148da08ddd13cc5c2c1128efd29d90 *R/bioc.R
+bdce468fb8840c24702f5c29f0f69465 *R/bioc.R
 ce41013c79893a03a715f98e37b8fbaa *R/cran.R
 c43596292f937dccd76d8a7e1642b50a *R/dist.R
 26589034818b9635e501c2f2fb8d9a24 *R/get_urban_data.R
@@ -22,7 +22,7 @@ f1de1160d36d4c20f8ce92e8451afeb8 *man/available.Rd
 923d6d67ce932d1a7113bcf6e869d88b *man/available_on_cran.Rd
 d906b9dfcafacf249d9cd57095531a79 *man/available_on_github.Rd
 9ccac3478763e32360beaacb8fa8e17e *man/common_suffixes.Rd
-001fcbd90729ba2b1380b109582330f8 *man/create.Rd
+478ca22b0bd27db1db5d18a6bb04ee0d *man/create.Rd
 ad97309c331fd1ec39fcc80700d1bff4 *man/find_acronym.Rd
 6bb8bbb3029b6646306abf260243e29b *man/get_bad_words.Rd
 3052b108bbb870075b1d2003b081680a *man/get_sentiment.Rd
