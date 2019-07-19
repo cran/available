@@ -1,7 +1,7 @@
 Package: available
 Title: Check if the Title of a Package is Available, Appropriate and
         Interesting
-Version: 1.0.3
+Version: 1.0.4
 Authors@R: c(
     person("Carl", "Ganz", role = c("aut")),
     person("Gábor", "Csárdi", , "csardi.gabor@gmail.com", role = c("aut")),
@@ -23,7 +23,7 @@ Suggests: usethis, BiocInstaller, BiocManager, testthat
 URL: https://github.com/ropenscilabs/available
 BugReports: https://github.com/ropenscilabs/available/issues
 NeedsCompilation: no
-Packaged: 2019-07-01 15:46:44 UTC; jhester
+Packaged: 2019-07-19 13:19:21 UTC; jhester
 Author: Carl Ganz [aut],
   Gábor Csárdi [aut],
   Jim Hester [aut, cre],
@@ -31,4 +31,4 @@ Author: Carl Ganz [aut],
   Rachael Tatman [aut]
 Maintainer: Jim Hester <james.f.hester@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-07-01 19:30:03 UTC
+Date/Publication: 2019-07-19 14:40:02 UTC

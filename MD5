@@ -1,7 +1,7 @@
-23594ad540fbcde2c2024ca0c64e540e *DESCRIPTION
+17eafca85b8bb19e6094fcc5a3b0ae30 *DESCRIPTION
 b0a57549ab664695d312d8f263bb5ae0 *LICENSE
 c03c8c9a1ffc7a208b1d2064b4a97423 *NAMESPACE
-e58f4d2c2d0dc5bf6e7bc9fbe5d674b8 *NEWS.md
+0fded6c492be92384d7b29a71bf1bceb *NEWS.md
 5b13172d9ad8e9e77ba64aeda8f7f0bf *R/available.R
 51e3d3ef54f515dd106c7c277e55badc *R/bad_words.R
 bdce468fb8840c24702f5c29f0f69465 *R/bioc.R
@@ -35,9 +35,9 @@ e894593abad8bbdc1716efe16883748c *man/namr.Rd
 df4760f2bb5c67a14bcfad4658d82fd6 *man/suggest.Rd
 e71528bc7e5de29165c57dff7d2422fb *man/valid_package_name.Rd
 1bb82a2ddff1e9874b69ee64b378671d *tests/testthat.R
-5406ad7e355139eaeab788fee3792734 *tests/testthat/test-badwords.R
-512bc03684918259eaca709671a86f3a *tests/testthat/test-bioc.R
-00b911296f399ac5942351b5ca2736f9 *tests/testthat/test-cran.R
-69bb5c0a3b4fafb181d9a74e58feceb2 *tests/testthat/test-github.R
+5c447e79cc0c94fb4e4e4e9239b5b770 *tests/testthat/test-badwords.R
+bf421664927fdee5787a165b14e4756d *tests/testthat/test-bioc.R
+7c506bb3ed7e4cd77bd1763e14da62c8 *tests/testthat/test-cran.R
+22fbc1b3747663545320cf8f50042b30 *tests/testthat/test-github.R
 31c5758e851078397ff096b51bafdde4 *tests/testthat/test-name_to_search_terms.R
 32309d077d0759a1fc954a81a951d456 *tests/testthat/test-namr.R
