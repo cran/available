@@ -15,7 +15,7 @@ suggest(path = ".", field = c("Title", "Description"), text = NULL)
 }
 \description{
 If the package you are using already has a title, simply pass the path to
-the package root in `path`. Otherwise use `title` to specify a potential
+the package root in \code{path}. Otherwise use \code{title} to specify a potential
 title.
 }
 \examples{
@@ -27,7 +27,7 @@ suggest()
 suggest(field = "Description")
 }
 
-# Or by explictly using the text argument
+# Or by explicitly using the text argument
 suggest(text =
   "A Package for Displaying Visual Scenes as They May Appear to an Animal with Lower Acuity")
 }

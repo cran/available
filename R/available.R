@@ -23,6 +23,12 @@
 #' # Or by setting a global option
 #' options(available.browse = FALSE)
 #' available("survival")
+#'
+#' # Test if a name is available in a non-default CRAN repository by setting
+#' # the `repos` argument
+#' available_on_cran("semaforos")
+#'
+#' available_on_cran("semaforos", repos = "https://bisaloo.r-universe.dev")
 #' }
 #' @export
 available <- function(name, browse = getOption("available.browse", TRUE), ...) {
@@ -31,18 +37,13 @@ available <- function(name, browse = getOption("available.browse", TRUE), ...) {
     available_on_bioc(name, ...),
     available_on_github(name))
   terms <- name_to_search_terms(name)
+
+  urban_dictonary <- check_urban()
+
   res <- c(res,
     unlist(recursive = FALSE,
-      lapply(terms,
-      function(term) {
-        compact(list(
-          get_bad_words(term),
-          get_abbreviation(term),
-          get_wikipidia(term),
-          get_wiktionary(term),
-          get_urban_data(term),
-          get_sentiment(term)))
-          })))
+      lapply(terms, check_online_terms, urban = urban_dictonary
+      )))
   structure(res, class = "available_query", packagename = name,
             browse = browse)
 }
@@ -95,7 +96,7 @@ create <- function(name, ...) {
 #' suggest(field = "Description")
 #' }
 #'
-#' # Or by explictly using the text argument
+#' # Or by explicitly using the text argument
 #' suggest(text =
 #'   "A Package for Displaying Visual Scenes as They May Appear to an Animal with Lower Acuity")
 suggest <- function(path = ".",  field = c("Title", "Description"), text = NULL) {
@@ -113,4 +114,25 @@ suggest <- function(path = ".",  field = c("Title", "Description"), text = NULL)
   }
 
   namr(text)
+}
+
+
+
+check_online_terms <- function(term, urban = TRUE) {
+      compact(list(get_bad_words(term),
+      get_abbreviation(term),
+      get_wikipedia(term),
+      get_wiktionary(term),
+      if (urban) get_urban_data(term),
+      get_sentiment(term)))
+}
+
+
+check_urban <- function() {
+  if (!interactive()) {
+    return(TRUE)
+  }
+    cat("Urban Dictionary can contain potentially offensive results,\n  should they be included? [Y]es / [N]o:\n")
+    result <- tryCatch(scan("", what = "character", quiet = TRUE, nlines = 1), error = function(x) "N")
+    identical(toupper(result), "Y")
 }

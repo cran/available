@@ -1,6 +1,14 @@
+# available 1.0.5
+
+* Gábor Csárdi is now the maintainer.
+
+* `get_wikipidia()` renamed to `get_wikipedia()`.
+
+* `valid_package_name()` now correctly checks a package name according to CRAN policy (@KevCaz, #61).
+
 # available 1.0.4
 
-* Tests requiring network access are not skipped on CRAN.
+* Tests requiring network access are now skipped on CRAN.
 
 # available 1.0.3
 

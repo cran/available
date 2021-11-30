@@ -14,14 +14,16 @@ default = TRUE. Default can be changed by setting
 \code{available.browse} in \code{.Rprofile}. See \link[base]{Startup}
 for more details.}
 
-\item{...}{Additional arguments passed to [utils::available.packages()].}
+\item{...}{Additional arguments passed to \code{\link[utils:available.packages]{utils::available.packages()}}.}
 }
 \description{
 Searches performed
-- Valid package name
-- Already taken on CRAN
-- Positive or negative sentiment
-- Urban Dictionary
+\itemize{
+\item Valid package name
+\item Already taken on CRAN
+\item Positive or negative sentiment
+\item Urban Dictionary
+}
 }
 \examples{
 \dontrun{
@@ -34,5 +36,11 @@ available("survival", browse = FALSE)
 # Or by setting a global option
 options(available.browse = FALSE)
 available("survival")
+
+# Test if a name is available in a non-default CRAN repository by setting
+# the `repos` argument
+available_on_cran("semaforos")
+
+available_on_cran("semaforos", repos = "https://bisaloo.r-universe.dev")
 }
 }

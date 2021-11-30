@@ -16,8 +16,16 @@ available_on_cran(name, repos = default_cran_repos, ...)
     character vector, the base URL(s) of the repositories to use.
   }
 
-\item{...}{Additional arguments passed to [utils::available.packages()].}
+\item{...}{Additional arguments passed to \code{\link[utils:available.packages]{utils::available.packages()}}.}
 }
 \description{
 See if a name is available on CRAN
+}
+\examples{
+available_on_cran("semaforos")
+
+# Test if this name is available in a non-default CRAN repository
+\dontrun{
+available_on_cran("semaforos", repos = "https://bisaloo.r-universe.dev")
+}
 }

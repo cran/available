@@ -1,11 +1,11 @@
 Package: available
 Title: Check if the Title of a Package is Available, Appropriate and
         Interesting
-Version: 1.0.4
+Version: 1.0.5
 Authors@R: c(
     person("Carl", "Ganz", role = c("aut")),
-    person("Gábor", "Csárdi", , "csardi.gabor@gmail.com", role = c("aut")),
-    person("Jim", "Hester", email = "james.f.hester@gmail.com", role = c("aut", "cre")),
+    person("Gábor", "Csárdi", , "csardi.gabor@gmail.com", role = c("aut", "cre")),
+    person("Jim", "Hester", role = "aut"),
     person("Molly", "Lewis", role = c("aut")),
     person("Rachael", "Tatman", role = c("aut"))
     )
@@ -15,20 +15,19 @@ Description: Check if a given package name is available to use. It checks the
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.2
 Imports: cli, clisymbols, crayon, tidytext, desc, glue, jsonlite,
         memoise, SnowballC, stringdist, tibble, udapi, yesno
-Suggests: usethis, BiocInstaller, BiocManager, testthat
-URL: https://github.com/ropenscilabs/available
-BugReports: https://github.com/ropenscilabs/available/issues
+Suggests: usethis, BiocManager, testthat, covr
+URL: https://github.com/r-lib/available
+BugReports: https://github.com/r-lib/available/issues
 NeedsCompilation: no
-Packaged: 2019-07-19 13:19:21 UTC; jhester
+Packaged: 2021-11-29 22:52:38 UTC; jhester
 Author: Carl Ganz [aut],
-  Gábor Csárdi [aut],
-  Jim Hester [aut, cre],
+  Gábor Csárdi [aut, cre],
+  Jim Hester [aut],
   Molly Lewis [aut],
   Rachael Tatman [aut]
-Maintainer: Jim Hester <james.f.hester@gmail.com>
+Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-07-19 14:40:02 UTC
+Date/Publication: 2021-11-30 13:10:05 UTC
