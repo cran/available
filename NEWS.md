@@ -1,3 +1,8 @@
+# available 1.1.0
+
+* Removed Urban Dictionary support, as the udapi package is set to be
+  archived.
+
 # available 1.0.5
 
 * Gábor Csárdi is now the maintainer.

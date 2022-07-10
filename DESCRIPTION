@@ -1,7 +1,7 @@
 Package: available
 Title: Check if the Title of a Package is Available, Appropriate and
         Interesting
-Version: 1.0.5
+Version: 1.1.0
 Authors@R: c(
     person("Carl", "Ganz", role = c("aut")),
     person("Gábor", "Csárdi", , "csardi.gabor@gmail.com", role = c("aut", "cre")),
@@ -11,18 +11,18 @@ Authors@R: c(
     )
 Description: Check if a given package name is available to use. It checks the
   name's validity. Checks if it is used on 'GitHub', 'CRAN' and 'Bioconductor'. Checks
-  for unintended meanings by querying Urban Dictionary, 'Wiktionary' and Wikipedia.
+  for unintended meanings by querying 'Wiktionary' and Wikipedia.
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0.9000
 Imports: cli, clisymbols, crayon, tidytext, desc, glue, jsonlite,
-        memoise, SnowballC, stringdist, tibble, udapi, yesno
+        memoise, SnowballC, stringdist, tibble, yesno
 Suggests: usethis, BiocManager, testthat, covr
 URL: https://github.com/r-lib/available
 BugReports: https://github.com/r-lib/available/issues
 NeedsCompilation: no
-Packaged: 2021-11-29 22:52:38 UTC; jhester
+Packaged: 2022-07-10 18:40:17 UTC; gaborcsardi
 Author: Carl Ganz [aut],
   Gábor Csárdi [aut, cre],
   Jim Hester [aut],
@@ -30,4 +30,4 @@ Author: Carl Ganz [aut],
   Rachael Tatman [aut]
 Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-11-30 13:10:05 UTC
+Date/Publication: 2022-07-10 19:00:02 UTC
